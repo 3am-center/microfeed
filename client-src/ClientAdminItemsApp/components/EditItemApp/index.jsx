@@ -313,7 +313,7 @@ export default class EditItemApp extends React.Component {
                     }
                     value={item.category}
                     onChange={(e) => {
-                      this.onUpdateItemMeta({ CATEGORY: e.target.value });
+                      this.onUpdateItemMeta({ category: e.target.value });
                     }}
                   />
                   <div className="grid grid-cols-2 gap-4 mt-4">
