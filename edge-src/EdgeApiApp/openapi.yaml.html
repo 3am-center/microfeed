@@ -351,6 +351,20 @@ components:
             If this channel is a podcast, the maximum amount of text allowed for the description is 4000 characters - this is a requirement of Apple Podcasts.
             If this is a blog, then you can write as many words as you want for the description.
           example: <p>some html description here</p>
+        language:
+          type: string
+          description: |
+            The language of the content in the feed.
+            It should follow the IETF BCP 47 standard.
+          example: en-US
+          required: false
+        category:
+          type: string
+          description: |
+            The category of the content in the feed.
+            This could help in categorizing and discovering the feed.
+          example: Technology
+          required: false
         home_page_url:
           type: string
           description: |
